@@ -1,49 +1,50 @@
-!DOCTYPhtml>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>CampusBizConnect Survey</title>
+    <title>CatPhotoApp</title>
 </head>
 <body>
-    <h1>CampusBizConnect Survey</h1>
-    <p>We appreciate your feedback on our idea to connect student-run SMEs and businesses on campus. Your input is valuable to us!</p>
-    
-    <!-- Survey Form -->
-    <form action="submit_survey.php" method="post">
-        <!-- Participant Information -->
-        <h2>Participant Information</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+    <h2>CatPhotoApp</h2>
+    <main>
+        <h3>Cat Photos</h3>
+        <!-- TODO: Add link to cat photos -->
+        <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+        <p>
+            
+           <a href="#"><img src="https://media.istockphoto.com/id/486712578/photo/orange-striped-little-kitten.jpg?s=1024x1024&w=is&k=20&c=WW_VRKxZhD52Wq4m2e8oLCRNZXFvxnrEK9kAXNQqx34=" alt="A cute orange cat "></a> 
+        </p>
+        <h3>Cat Lists</h3>
+        <div class="lists">
+        <p>Things cats <em>love</em>:</p>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ol>
+        <img src="lasagna.jpg" alt="">
+        <p>Things cats <strong>hate</strong> :</p>
+        <ul>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+    </div>
+        <img src="cats-1753883_1280.jpg" alt="Cats">
+        <form action="/submit-cat-photo">
+            <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor"> indoor</label> <br>
+        <label for="outdoor"><input type="radio" name="indoor-outdoor" id="outdoor">outdoor</label>
+        <br>
 
-        <!-- Survey Questions -->
-        <h2>Survey Questions</h2>
-        
-        <!-- Question 1 -->
-        <label for="q1">1. Are you a student on ABU campus?</label><br>
-        <input type="radio" id="q1_yes" name="q1" value="Yes" required>
-        <label for="q1_yes">Yes</label><br>
-        <input type="radio" id="q1_no" name="q1" value="No" required>
-        <label for="q1_no">No</label><br><br>
+        <label for="loving"><input id="loving" type="checkbox" name="personality">Loving</label><br>
+        <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label><br>
+        <label for="energetic"><input id="energetic" type="checkbox" name="personality">Energetic</label><br>
 
-        <!-- Question 2 -->
-        <label for="q2">2. Would you be interested in using a platform that connects student-run SMEs on campus?</label><br>
-        <input type="radio" id="q2_yes" name="q2" value="Yes" required>
-        <label for="q2_yes">Yes</label><br>
-        <input type="radio" id="q2_no" name="q2" value="No" required>
-        <label for="q2_no">No</label><br><br>
-
-        <!-- Question 3 -->
-        <label for="q3">3. What features or services would you like to see on such a platform?</label><br>
-        <textarea id="q3" name="q3" rows="4" cols="50" required></textarea><br><br>
-
-        <!-- Question 4 -->
-        <label for="q4">4. Do you have any suggestions or comments to improve the concept of CampusBizConnect?</label><br>
-        <textarea id="q4" name="q4" rows="4" cols="50" required></textarea><br><br>
-
-        <!-- Submit Button -->
-        <input type="submit" value="Submit">
-    </form>
+            <input type="text" placeholder="cat photo URL" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p><small>No Copyright - <a href="http://freecodecamp.org">freecodecamp.org</a></small></p>
+    </footer>
 </body>
 </html>
